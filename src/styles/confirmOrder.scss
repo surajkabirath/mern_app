@@ -1,0 +1,64 @@
+@import "colors";
+
+.confirm_order {
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 100%;
+  height: 70vh;
+  .confirm_order_details {
+    height: 100%;
+    background-color: wheat;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 3rem;
+      font: 100 3rem "Roboto";
+      font-weight: 500;
+    }
+
+    .confirm_order_details_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        background-color: rgb(233, 233, 233);
+        margin: 1rem;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      button {
+        background-color: $red;
+        color: white;
+        outline: none;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .confirm_order .confirm_order_details .confirm_order_details_form {
+    div {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
