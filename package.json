@@ -52,7 +52,7 @@
   }
 }
 
-for backend
+//for backend
 {
   "name": "server",
   "version": "1.0.0",
